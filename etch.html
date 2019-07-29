@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./resources/css/normalize.css" />
+    <link rel="stylesheet" href="./resources/css/etchstyle.css">
+    <script defer src="./resources/js/etchscript.js"></script>
+  </head>
+  <body>
+    <div class="gridButtons">
+      <button type="button" id="resetButton" name="Reset Button">Reset Grid</button>
+      <button type="button" id="changeGridSize" name="Change Grid Size Button">Grid Size</button>
+    </div>
+    <div class="drawErase">
+      <input type="radio" id="draw" name="Draw/Erase Selector" value="draw" checked="checked">
+      <label for="draw">Draw</label>
+      <input type="radio" id="erase" name="Draw/Erase Selector" value="erase">
+      <label for="erase">Erase</label>
+    </div>
+    <div class="randomColor">
+      <input type="checkbox" id="randomColorCheckbox" name="Random Color Checkbox" value="randomColorCheckbox">
+      <label for="randomColorCheckbox">Random Color</label>
+    </div>
+    <div class="cellSize">
+      <input type="range" id="cellSizeSlider" name="Cell Size Slider" min="25" max="45" value="35">
+    </div>
+  </body>
+</html>

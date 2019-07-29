@@ -1,0 +1,31 @@
+:root {
+  --cellSize: 3em;
+}
+
+div[name^="row"], section[name^="col"] {
+  height: var(--cellSize);
+}
+
+section[name^="col"] {
+  display: inline-block;
+  width: var(--cellSize);
+}
+
+.gridButtons, .drawErase, .randomColor, .cellSize, #gridWrapper {
+  text-align: center;
+}
+
+#grid {
+  display: inline-block;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: 0 .2em 1em rgba(0, 0, 0, .2);
+}
+
+[data-colored=false] {
+  background-color: white;
+}
+
+[data-colored=true] {
+  background-color: red;
+}
